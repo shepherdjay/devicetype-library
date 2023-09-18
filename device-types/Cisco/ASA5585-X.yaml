@@ -1,43 +1,21 @@
 ---
 manufacturer: Cisco
-model: ASA5585-X
-slug: cisco-asa5585-x
-part_number: ASA5585-K9
-u_height: 1
+model: ASA 5585-X
+slug: cisco-asa-5585-x
+part_number: ASA5585
+u_height: 2
 is_full_depth: true
-console-ports:
-  - name: Con 0
-    type: rj-45
-power-ports:
-  - name: PS1
-    type: iec-60320-c14
-    allocated_draw: 670
-    maximum_draw: 770
-  - name: PS2
-    type: iec-60320-c14
-    allocated_draw: 670
-    maximum_draw: 770
-interfaces:
-  - name: Management0/0
-    type: 1000base-t
-    mgmt_only: true
-  - name: GigabitEthernet0/0
-    type: 1000base-t
-  - name: GigabitEthernet0/1
-    type: 1000base-t
-  - name: GigabitEthernet0/2
-    type: 1000base-t
-  - name: GigabitEthernet0/3
-    type: 1000base-t
-  - name: GigabitEthernet0/4
-    type: 1000base-t
-  - name: GigabitEthernet0/5
-    type: 1000base-t
-  - name: GigabitEthernet0/6
-    type: 1000base-t
-  - name: GigabitEthernet0/7
-    type: 1000base-t
-  - name: TenGigabitEthernet0/8
-    type: 10gbase-x-sfpp
-  - name: TenGigabitEthernet0/9
-    type: 10gbase-x-sfpp
+airflow: front-to-rear
+weight: 56
+weight_unit: lb
+module-bays:
+  - name: module 0
+    label: Core SSP
+    position: 0
+  - name: module 1
+    label: SSP or Network Module
+    position: 1
+  - name: power supply 0
+    position: 0
+  - name: power supply 1
+    position: 1
